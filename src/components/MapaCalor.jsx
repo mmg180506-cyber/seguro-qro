@@ -43,7 +43,10 @@ function MapaCalor() {
   const [cargando, setCargando] = useState(true)
 
   useEffect(() => {
-    fetch(`http://${window.location.hostname}:3001/api/reportes`)
+    const API_URL = window.location.hostname === 'localhost' 
+  ? 'http://localhost:3001' 
+  : 'https://seguro-qro.onrender.com'
+fetch(`${API_URL}/api/reportes`)
       .then(res => res.json())
       .then(data => {
         setDatos(data)

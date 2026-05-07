@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 
-const API = `http://${window.location.hostname}:3001`
+const API = window.location.hostname === 'localhost' 
+  ? 'http://localhost:3001' 
+  : 'https://seguro-qro.onrender.com'
 
 function ForoGeneral({ setMostrarForo }) {
   const [mensajes, setMensajes] = useState([])
