@@ -11,6 +11,9 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
+// Servir archivos estáticos del frontend compilado
+app.use(express.static(path.join(__dirname, 'dist')));
+
 const DB_PATH = path.join(__dirname, 'mensajes.json');
 const CLAVE_ADMIN = 'Qr0$Segura-Max_2026!Admin@Pro#Ultra&Clave*Top%Secreta+';
 
@@ -59,7 +62,7 @@ setInterval(limpiar, 6 * 60 * 60 * 1000);
 
 app.get('/api/reportes', (req, res) => {
   try {
-    const dataPath = path.join(__dirname, '..', 'public', 'datos', 'reportes.json');
+    const dataPath = path.join(__dirname, 'public', 'datos', 'reportes.json');
     if (!fs.existsSync(dataPath)) return res.json({ reportes: [], calor: [] });
     const datos = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
     const calor = datos.map(r => [r.lat, r.lng, 0.8]);
@@ -113,6 +116,11 @@ app.delete('/api/foro/:id', (req, res) => {
   mensajes = mensajes.filter(m => m.id !== idEliminar);
   guardarMensajes(mensajes);
   res.json({ mensaje: 'Mensaje eliminado correctamente' });
+});
+
+// Ruta para el frontend (SPA)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(PORT, () => {
