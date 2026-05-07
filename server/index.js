@@ -12,8 +12,9 @@ app.use(cors());
 app.use(express.json());
 
 // Servir archivos estáticos del frontend compilado
-app.use(express.static(path.join(__dirname, 'dist')));
-
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
 const DB_PATH = path.join(__dirname, 'mensajes.json');
 const CLAVE_ADMIN = 'Qr0$Segura-Max_2026!Admin@Pro#Ultra&Clave*Top%Secreta+';
 
