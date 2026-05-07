@@ -1,0 +1,110 @@
+[
+  {
+    "tipo": "robo",
+    "colonia": "Centro",
+    "lat": 20.5931,
+    "lng": -100.3929,
+    "fecha": "2026-04-28",
+    "fuente": "SSPM Querétaro",
+    "descripcion": "Robo a transeúnte en vía pública. Reducción del 39% vs 2025"
+  },
+  {
+    "tipo": "robo",
+    "colonia": "Juriquilla",
+    "lat": 20.7050,
+    "lng": -100.4450,
+    "fecha": "2026-04-25",
+    "fuente": "SESNSP",
+    "descripcion": "Robo a casa habitación. Delitos patrimoniales bajaron 9% en Q1 2026"
+  },
+  {
+    "tipo": "asalto",
+    "colonia": "Corregidora",
+    "lat": 20.5480,
+    "lng": -100.4420,
+    "fecha": "2026-04-20",
+    "fuente": "Fiscalía Qro",
+    "descripcion": "Asalto en transporte público. Robo en transporte individual redujo 43%"
+  },
+  {
+    "tipo": "robo",
+    "colonia": "El Marqués",
+    "lat": 20.6300,
+    "lng": -100.2600,
+    "fecha": "2026-04-18",
+    "fuente": "POES",
+    "descripcion": "Robo de autopartes. Disminución del 31% en este delito"
+  },
+  {
+    "tipo": "robo",
+    "colonia": "San Juan del Río",
+    "lat": 20.3900,
+    "lng": -99.9900,
+    "fecha": "2026-04-15",
+    "fuente": "SESNSP",
+    "descripcion": "Robo de vehículo. Reducción del 17% vs 2025. 991 vehículos recuperados"
+  },
+  {
+    "tipo": "fraude",
+    "colonia": "Centro",
+    "lat": 20.5880,
+    "lng": -100.3900,
+    "fecha": "2026-04-10",
+    "fuente": "SESNSP",
+    "descripcion": "Fraude a docente mediante préstamos falsos. 1,166 casos en Q1 2026"
+  },
+  {
+    "tipo": "fraude",
+    "colonia": "San Juan del Río",
+    "lat": 20.3880,
+    "lng": -99.9880,
+    "fecha": "2026-04-08",
+    "fuente": "Fiscalía Qro",
+    "descripcion": "158 casos de fraude en San Juan del Río. 90% de fraudes en 4 municipios"
+  },
+  {
+    "tipo": "fraude",
+    "colonia": "Corregidora",
+    "lat": 20.5460,
+    "lng": -100.4400,
+    "fecha": "2026-04-05",
+    "fuente": "SESNSP",
+    "descripcion": "123 casos de fraude en Corregidora. Esquema de apoyos económicos falsos"
+  },
+  {
+    "tipo": "fraude",
+    "colonia": "El Marqués",
+    "lat": 20.6280,
+    "lng": -100.2580,
+    "fecha": "2026-04-02",
+    "fuente": "SESNSP",
+    "descripcion": "81 casos de fraude en El Marqués. Querétaro, 6° lugar nacional en fraudes"
+  },
+  {
+    "tipo": "sospechoso",
+    "colonia": "Centro",
+    "lat": 20.5900,
+    "lng": -100.3880,
+    "fecha": "2026-05-01",
+    "fuente": "POES",
+    "descripcion": "591 operativos policiales en abril. 259 detenidos por delitos"
+  },
+  {
+    "tipo": "sospechoso",
+    "colonia": "Juriquilla",
+    "lat": 20.7070,
+    "lng": -100.4470,
+    "fecha": "2026-04-30",
+    "fuente": "Guardia Nacional",
+    "descripcion": "Querétaro entre los estados más seguros. Nueva base en San Juan del Río"
+  },
+  {
+    "tipo": "accidente",
+    "colonia": "Centro",
+    "lat": 20.5910,
+    "lng": -100.3910,
+    "fecha": "2026-04-22",
+    "fuente": "Protección Civil",
+    "descripcion": "Accidente vial. Lesiones culposas disminuyeron 26% en Q1 2026"
+  }
+]
