@@ -12,6 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname, '..', 'dist')));
+
 const DB_PATH = path.join(__dirname, 'mensajes.json');
 const CLAVE_ADMIN = 'Qr0$Segura-Max_2026!Admin@Pro#Ultra&Clave*Top%Secreta+';
 
@@ -60,7 +61,7 @@ setInterval(limpiar, 6 * 60 * 60 * 1000);
 
 app.get('/api/reportes', (req, res) => {
   try {
-    const dataPath = path.join(__dirname, 'dist', 'datos', 'reportes.json');
+    const dataPath = path.join(__dirname, '..', 'dist', 'datos', 'reportes.json');
     if (!fs.existsSync(dataPath)) return res.json({ reportes: [], calor: [] });
     const datos = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
     const calor = datos.map(r => [r.lat, r.lng, 0.8]);
